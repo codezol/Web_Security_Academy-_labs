@@ -17,4 +17,4 @@
 4- after fallowing the path we can access the admin panel directly and delete carlos account.
 
 
-**Explanation**: Sometimes Developers many count on hidding urls to protect senstive functionalities, however these urls can be found within clint sied javascript, in robots.txt file or using content discovery tools with large wordlists.
+**Explanation**: Sometimes Developers may count on hidding urls to protect senstive functionalities, however these urls can be found within clint sied javascript, in robots.txt file or using content discovery tools with large wordlists.
